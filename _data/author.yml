@@ -1,0 +1,12 @@
+# 这里是关于作者的联系方式等
+
+name: flahsy
+tel: 13202293657
+qq: 2069410891
+email: flahsy@163.com
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "这里等待定义"
+sidebar-avatar: /img/avatar-love.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+

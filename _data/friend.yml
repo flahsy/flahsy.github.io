@@ -1,0 +1,11 @@
+# 友情链接
+friends: [  
+    {
+        title: "flahsy",
+        href: "http://su.gallery/"
+    },
+    {
+    	title: "房多多",
+    	href: "http://www.fangdd.com/"
+    }
+]

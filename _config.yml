@@ -6,7 +6,8 @@ header-img: img/home-bg.jpg
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-permalink: pretty
+# permalink: pretty
+permalink: :title
 
 # 分页
 paginate: 10

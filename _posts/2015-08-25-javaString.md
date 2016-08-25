@@ -1,0 +1,49 @@
+---
+layout: post
+category: java
+subtitle: java中字符串处理,String and StringBuilder and StringBuffer
+tags: java
+---
+
+## String对象的特性：
+
+1:不变性，凡是涉及到要更改String内容的操作，都会返回一个新的String对象
+
+    String str = "abc";
+    String s = str.toUpperCase();
+
+这里的s是一个新的对象，而str保持不变
+
+2:针对常量池的优化，如果有多个String对象拥有相同的值时，那么多个对象只是对常量池中同一个对象的拷贝，这样在同一个字符串频繁出现时，会节省很多的内存空间。
+
+##有多个字符串需要拼接时，使用StringBuilder的append会比较
+
+
+## 好,看下面的代码
+
+```java	
+    long start = System.currentTimeMillis();
+    String string  = "";
+    for (int i=0;i<100000;i++){
+        string += "a";
+    }
+    System.out.println(System.currentTimeMillis()-start);
+    start = System.currentTimeMillis();
+    StringBuilder stringBuilder = new StringBuilder();
+    for (int i=0;i<100000;i++){
+        stringBuilder.append("a");
+    }
+    System.out.println(System.currentTimeMillis()-start);
+```
+从以下运行结果明显的看出来，在多次拼接字符串的操作时，使用StringBuilder比String的+重载有效率的多。
+
+	5596
+	2
+
+
+
+
+## StringBuilder和StringBuffer
+
+后者是线程安全的，但是相应的开销也会提高，在其他方面两者基本相同，在多线程的环境中，不要使用StringBuilder
+

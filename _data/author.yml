@@ -1,12 +1,11 @@
 # 这里是关于作者的联系方式等
 
-name: flahsy
-tel: 13202293657
+name: 温水青蛙
 qq: 2069410891
 email: flahsy@163.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "这里等待定义"
-sidebar-avatar: /img/avatar-love.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "现在大部分人的生活,其实就是一锅温水,慢慢的煮,慢慢的,在你发现你要承受不住的时候,却也无能为力"
+sidebar-avatar: /img/avatar-love.jpg     
 
